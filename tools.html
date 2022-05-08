@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Tools</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 300px;
+
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: rgb(175, 138, 169);
+            border: 1px solid red;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        div>img {
+            width: 100%;
+        }
+
+        #main {
+                display: flex;
+                width: 90%;
+                margin: auto;
+            }
+            #topImg{
+                width: 90%;
+                margin: auto;
+            }
+            #Shop >h3{
+                padding-left: 50px;
+                color: black;
+                font-weight: 800;
+            }
+
+        #main>div:nth-child(1) {
+            width: 30%;
+            border: 1px solid red;
+            height: auto;
+        }
+
+        #main>div:nth-child(2) {
+            width: 70%;
+            border: 1px solid red;
+            height: auto;
+        }
+        #face {
+            margin-top: 10px;
+            margin-left: 50px;
+            cursor: pointer;
+        }
+        #face:hover {
+            color: #ff80cb;
+        }
+        #SectionName,
+        #SectionName2,
+        #SectionName3,
+        #SectionName4,
+        #SectionName5,
+        #SectionName6,
+        #SectionName7 {
+                display: none;
+            }
+        #SectionName p,
+        #SectionName2 p,
+        #SectionName3 p,
+        #SectionName4 p,
+        #SectionName5 p,
+        #SectionName6 p,
+        #SectionName7 p {
+            color: black;
+            text-align: left;
+            padding-left: 20px;
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- navbar -->
+    </div>
+    <div id="topImg" onclick="searchPro(sephora)">
+        <img src="https://logan.nnnow.com/content/dam/nnnow-project/27-sep-2021/Tools_BrushesDesktop.jpg" alt="">
+    </div>
+    <div id="main">
+        <div>
+            <!-- 30% -->
+            <div id="Shop">
+                      <h3>SHOP</h3>
+                      <div ONCLICK="ShowAndHide()" id="face">FACE</div>
+                      <div id="SectionName">
+                      <p>Foundation</p>
+                      <p>BB & CC Cream</p>
+                      <p>Concealer</p>
+                      <p>Face Primer</p>
+                      <p>Highlighter</p>
+                      </div>
+                      <div ONCLICK="ShowAndHide()" id="face">CHEEK</div>
+                      <div id="SectionName2">
+                      <p>Blush</p>
+                      <p>Bronzer</p>
+                      <p>Highlighter</p>
+                      </div>
+                      <div ONCLICK="ShowAndHide()" id="face">EYE</div>
+                      <div id="SectionName3">
+                      <p>Eye Palettes</p>
+                      <p>Mascara</p>
+                      <p>Eyeliner</p>
+                      <p>Eyebrow</p>
+                      <p>Eyeshadow</p>
+                      </div>
+                      <div ONCLICK="ShowAndHide()" id="face">LIP</div>
+                      <div id="SectionName4">
+                      <p>Lipstick</p>
+                      <p>Liquid Lipstick</p>
+                      <p>Lip Stain</p>
+                      <p>Lip Gloss</p>
+                      <p>Lip Plumper</p>
+                      <p>Lip Liner</p>
+                      <p>Lip Balm & Treatment</p>
+                      </div>
+                      <div ONCLICK="ShowAndHide()" id="face">BRUSHES & APPLICATORS</div>
+                      <div id="SectionName5">
+                      <p>Face Brushes</p>
+                      <p>Eye Brushes</p>
+                      <p>Lip Brushes</p>
+                      <p>Sponges & Applicators</p>
+                      </div>
+                      <div ONCLICK="ShowAndHide()" id="face">ACCESSORIES</div>
+                      <div id="SectionName6">
+                      <p>Nail Tools</p>
+                      <p>Makeup Tools & Accessories</p>
+                      </div>
+                      <div ONCLICK="ShowAndHide()" id="face">NAIL</div>
+                      <div id="SectionName7">
+                      <p>Nail Polish</p>
+                      <p>Nail Care</p>
+                      <p>Manicure & Pedicure Tools</p>
+                      </div>
+                </div>
+        </div>
+        <div>
+            <!-- 40% -->
+            <div>
+                <img src="https://logan.nnnow.com/content/dam/nnnow-project/21-april-2020/makeup-tools&acc/15APR20_TOOLS_CB_STRIP1_DESK.jpg"
+                    alt="">
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div>
+                <img src="https://logan.nnnow.com/content/dam/nnnow-project/21-april-2020/makeup-tools&acc/15APR20_SC_CB_STRIP2_DESK.jpg" alt="">
+            </div>
+            <!-- two -->
+            
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- three -->
+            <div>
+                <img src="https://logan.nnnow.com/content/dam/nnnow-project/21-april-2020/makeup-tools&acc/15APR20_SC_CB_STRIP3_DESK.jpg" alt="">
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- four -->
+            <div>
+                <img src="https://logan.nnnow.com/content/dam/nnnow-project/29-may-2020/28MAY20_SKINCARE_SHELF4_DESK.jpg" alt="">
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- five -->
+            <div>
+                <img src="https://logan.nnnow.com/content/dam/nnnow-project/21-april-2020/makeup-tools&acc/15APR20_SC_CB_STRIP5_DESK.jpg" alt="">
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- six -->
+            
+        </div>
+    </div>
+    <!-- Swiper -->
+    <!-- <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div> -->
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>
+<script>
+    function ShowAndHide() {
+  var x = document.getElementById("SectionName");
+  if (x.style.display == "none") {
+    x.style.display = "block";
+
+  } else {
+    x.style.display = "none";
+  }
+}
+// function ShowAndHide2() {
+//   var x = document.getElementById("SectionName2");
+//   if (x.style.display == "none") {
+//     x.style.display = "block";
+    
+//   } else {
+//     x.style.display = "none";
+//   }
+// }
+// function ShowAndHide3() {
+//   var x = document.getElementById("SectionName3");
+//   if (x.style.display == "none") {
+//     x.style.display = "block";
+    
+//   } else {
+//     x.style.display = "none";
+//   }
+// }
+// function ShowAndHide4() {
+//   var x = document.getElementById("SectionName4");
+//   if (x.style.display == "none") {
+//     x.style.display = "block";
+    
+//   } else {
+//     x.style.display = "none";
+//   }
+// }
+// function ShowAndHide5() {
+//   var x = document.getElementById("SectionName5");
+//   if (x.style.display == "none") {
+//     x.style.display = "block";
+    
+//   } else {
+//     x.style.display = "none";
+//   }
+// }
+// function ShowAndHide6() {
+//   var x = document.getElementById("SectionName6");
+//   if (x.style.display == "none") {
+//     x.style.display = "block";
+    
+//   } else {
+//     x.style.display = "none";
+//   }
+// }
+// function ShowAndHide7() {
+//   var x = document.getElementById("SectionName7");
+//   if (x.style.display == "none") {
+//     x.style.display = "block";
+    
+//   } else {
+//     x.style.display = "none";
+//   }
+// }
+</script>
