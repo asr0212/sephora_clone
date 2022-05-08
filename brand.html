@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRAND</title>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <style>
+        #top {
+            /* display: block;
+            margin: auto; */
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        #bottom {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+        }
+
+        #bottom>div {
+            /* height: 300px; */
+            height: auto;
+            width: 250px;
+            /* border: 1px soli d red; */
+            margin: auto;
+        }
+
+        input {
+            height: 50px;
+            width: 40%;
+            font-size: medium;
+            background-color: black;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        li {
+            list-style: none;
+            margin-bottom: 20px;
+
+        }
+
+        h1 {
+            margin-left: 35px;
+        }
+
+        #icon {
+            margin-left: -50px;
+            color: pink;
+        }
+        @media only screen and (min-width: 421px) and (max-width: 780px){
+            #bottom{
+                grid-template-columns: repeat(2,1fr);
+            }
+            #top{
+                margin: auto;
+            }
+        }
+        @media only screen and (min-width: 100px) and (max-width: 420px){
+            #bottom{
+                grid-template-columns: repeat(1,1fr);
+            }
+            #top{
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <div id="main">
+        <div id="top">
+            <h1>BRAND DIRECTORY</h1>
+            <input type="text" id="search" placeholder="Search Brand" onkeyup="searchFun()">
+            <i class="fa fa-search" aria-hidden="true" id="icon"></i>
+            <p>__________________________________________________________________________________________________________________________
+            </p>
+        </div>
+        <div id="bottom">
+            <div>
+                <h1>A</h1>
+                <ul>
+                    <li onclick="searchPro(innerText)">ABHATI SUISSE</li>
+                    <li onclick="searchPro(innerText)">ANASTASIA BEVERLY HILLS</li>
+                    <li onclick="searchPro(innerText)">ANASTASIA BEVERLY HILLS</li>
+                    <li onclick="searchPro(innerText)">ALPHA-H</li>
+                    <li onclick="searchPro(innerText)">AVEDA</li>
+                </ul>
+            </div>
+            <div>
+                <h1>B</h1>
+                <ul>
+                    <li onclick="searchPro(innerText)">BURTS BEES </li>
+                    <li onclick="searchPro(innerText)">BOBBI BROWN </li>
+                    <li onclick="searchPro(innerText)">BENEFIT COSMETICS </li>
+                    <li onclick="searchPro(innerText)">BVLGARI </li>
+                    <li onclick="searchPro(innerText)">BOSCIA </li>
+                    <li onclick="searchPro(innerText)">BURBERRY </li>
+                    <li onclick="searchPro(innerText)">BRIOGEO </li>
+
+                </ul>
+            </div>
+            <div id="c">
+                <h1>C</h1>
+                <ul>
+                    <li onclick="searchPro(innerText)">COACH </li>
+                    <li onclick="searchPro(innerText)">CAOliON </li>
+                    <li onclick="searchPro(innerText)">CliNIQUE </li>
+                    <li onclick="searchPro(innerText)"> CLARINS </li>
+                    <li onclick="searchPro(innerText)">CHOPARD </li>
+                    <li onclick="searchPro(innerText)">COSTUME NATIONAL </li>
+                    <li onclick="searchPro(innerText)">CAROliNA HERRERA </li>
+                    <li onclick="searchPro(innerText)">COVER FX </li>
+                    <!-- <li  onclick="searchPro(innerText)">CHLOE </li>
+                    <li  onclick="searchPro(innerText)">CAUDAliE </li>
+                    <li  onclick="searchPro(innerText)">CALVIN KLEIN FRAGRANCES </li> -->
+                </ul>
+            </div>
+            <div>
+                <h1>D</h1>
+                <ul>
+                    <li onclick="searchPro(innerText)">DAVIDOFF </li>
+                    <li onclick="searchPro(innerText)">DOLCE & GABBANA </li>
+                    <li onclick="searchPro(innerText)">DIESEL </li>
+                    <li onclick="searchPro(innerText)">DUNHILL </li>
+                    <li onclick="searchPro(innerText)">DIOR </li>
+                    <li onclick="searchPro(innerText)">DEAR DAHliA </li>
+                </ul>
+            </div>
+            <div>
+                <h1>E</h1>
+                <ul>
+                    <li onclick="searchPro(innerText)">EliE SAAB </li>
+                    <li onclick="searchPro(innerText)">ESTEE LAUDER </li>
+                    <li onclick="searchPro(innerText)">EliZABETH ARDEN </li>
+                    <li onclick="searchPro(innerText)">ERMENEGILDO ZEGNA </li>
+
+                </ul>
+            </div>
+            <div>
+                <h1>F</h1>
+                <ul>
+                    <li onclick="searchPro(innerText)">FOREO
+                    </li>
+                    <li onclick="searchPro(innerText)">FOREST ESSENTIALS </li>
+
+                </ul>
+            </div>
+            <div>
+                <h1>G</h1>
+                <ul>
+                    <li onclick="searchPro(innerText)">GIORGIO ARMANI </li>
+                    <li onclick="searchPro(innerText)">GLAM GLOW </li>
+                    <li onclick="searchPro(innerText)">GUERLAIN </li>
+                    <li onclick="searchPro(innerText)">GIVENCHY </li>
+                    <li onclick="searchPro(innerText)">GALli NEE </li>
+                    <li onclick="searchPro(innerText)">GUCC </li>
+
+                </ul>
+            </div>
+            <div>
+                <h1>H</h1>
+                <ul>
+                    <li onclick="searchPro(innerText)">HUGO BOSS
+                    </li>
+                    <li onclick="searchPro(innerText)">HUDA BEAUTY </li>
+
+            </div>
+            <div>
+                <h1>I</h1>
+                <ul>
+                    <li onclick="searchPro(innerText)">ISSEY MIYAKE </li>
+
+            </div>
+            <div>
+                <h1>J</h1>
+                <ul>
+                    <li onclick="searchPro(innerText)">JUICE BEAUTY </li>
+
+                </ul>
+            </div>
+            <div>
+                <h1>K</h1>
+                <ul>
+                    <li onclick="searchPro(innerText)">KAYAli
+                    </li>
+                    <li onclick="searchPro(innerText)">KENZO
+                    </li>
+                    <li onclick="searchPro(innerText)">KAMA AYURVEDA
+                    </li>
+                    <li onclick="searchPro(innerText)">KORA ORGANICS
+                    </li>
+                    <li onclick="searchPro(innerText)">KLARA COSMETICS </li>
+
+                </ul>
+            </div>
+            <div>
+                <h1>L</h1>
+                <ul>
+                    <li onclick="searchPro(innerText)">LANCÔME </li>
+                </ul>
+            </div>
+            <div>
+                <h1>M</h1>
+                <ul>
+                    <li onclick="searchPro(innerText)">MAKE UP FOR EVER
+                    </li>
+                    <li onclick="searchPro(innerText)">MARC JACOBS
+                    </li>
+                    <li onclick="searchPro(innerText)">MOROCCANOIL
+                    </li>
+                    <li onclick="searchPro(innerText)">MIU MIU
+                    </li>
+                    <li onclick="searchPro(innerText)">MARIO BADESCU
+                    </li>
+                    <li onclick="searchPro(innerText)">MOSCHINO
+                    </li>
+                    <li onclick="searchPro(innerText)">M.A.C
+                    </li>
+                    <li onclick="searchPro(innerText)">MICHAEL KORS
+                    </li>
+                    <li onclick="searchPro(innerText)">MONTBLANC </li>
+                </ul>
+            </div>
+            <div>
+                <h1>N</h1>
+                <ul>
+                    <li onclick="searchPro(innerText)">NARCISO RODRIGUEZ
+                    </li>
+                    <li onclick="searchPro(innerText)">NUDESTIX
+                    </li>
+                    <li onclick="searchPro(innerText)">NATASHA DENONA
+                    </li>
+                    <li onclick="searchPro(innerText)">NATIO
+                    </li>
+                    <li onclick="searchPro(innerText)">NINA RICCI </li>
+                </ul>
+            </div>
+            <div>
+                <h1>O</h1>
+                <ul>
+                    <li onclick="searchPro(innerText)">OMORFEE
+                    </li>
+                    <li onclick="searchPro(innerText)">O.P.I
+                    </li>
+                    <li onclick="searchPro(innerText)">OLAPLEX </li>
+
+                </ul>
+            </div>
+            <div>
+                <h1>P</h1>
+                <ul>
+                    <li onclick="searchPro(innerText)">PIXI
+                    </li>
+                    <li onclick="searchPro(innerText)">PACO RABANNE </li>
+
+                </ul>
+            </div>
+            <div>
+                <h1>R</h1>
+                <ul>
+                    <li onclick="searchPro(innerText)">ROBERTO CAVALli
+                    </li>
+                    <li onclick="searchPro(innerText)">RALPH LAUREN </li>
+
+                </ul>
+            </div>
+            <div>
+                <h1>S</h1>
+                <ul>
+                    <li onclick="searchPro(innerText)">SALVATORE FERRAGAMO
+                    </li>
+                    <li onclick="searchPro(innerText)">SWATI COSMETICS
+                    </li>
+                    <li onclick="searchPro(innerText)">SUNDAY RILEY
+                    </li>
+                    <li onclick="searchPro(innerText)">SEPHORA COLLECTION
+                    </li>
+                    <li onclick="searchPro(innerText)">SMASHBOX
+                    </li>
+                    <li onclick="searchPro(innerText)">STILA
+                    </li>
+                    <li onclick="searchPro(innerText)">SIMPLY NAM
+                    </li>
+                    <li onclick="searchPro(innerText)">SHISEIDO
+                    </li>
+                    <li onclick="searchPro(innerText)">STARSKIN </li>
+
+                </ul>
+            </div>
+            <div>
+                <h1>T</h1>
+                <ul>
+                    <li onclick="searchPro(innerText)">TIFFANY & CO
+                    </li>
+                    <li onclick="searchPro(innerText)">TOM FORD </li>
+
+            </div>
+            <div>
+                <h1>V</h1>
+                <ul>
+                    <li onclick="searchPro(innerText)">VERSACE
+                    </li>
+                    <li onclick="searchPro(innerText)">VOTRE </li>
+
+
+                </ul>
+            </div>
+            <div>
+                <h1>W</h1>
+                <ul>
+                    <li onclick="searchPro(innerText)">WISHFUL </li>
+
+
+                </ul>
+            </div>
+            <div>
+                <h1>Y</h1>
+                <ul>
+                    <li onclick="searchPro(innerText)">YVES SAINT LAURENT </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    let searchFun = () => {
+        let filter = document.querySelector("#search").value.toUpperCase();
+        let bottom = document.querySelector("#bottom");
+        let h1 = bottom.getElementsByTagName("ul");
+
+        for (let i = 0; i < h1.length; i++) {
+            let li = bottom.getElementsByTagName("li ")[i];
+            if (li) {
+                let textvalue = li.textContent || li.innerHTML;
+                if (textvalue.toUpperCase().indexOf(filter) > -1) {
+                    // li [1].style.display ="";
+                    console.log("found", li.textContent);
+                }
+                else {
+                    // li [1].style.display ="none";
+                    console.log("Not found");
+                }
+            }
+
+        }
+        console.log(filter);
+    }
+</script>
