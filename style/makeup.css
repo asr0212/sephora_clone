@@ -1,0 +1,60 @@
+div>img {
+    width: 100%;
+}
+
+#main {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+#topImg{
+    width: 90%;
+    margin: auto;
+}
+#Shop >h3{
+    padding-left: 50px;
+    color: black;
+    font-weight: 800;
+}
+
+#main>div:nth-child(1) {
+    width: 30%;
+    border: 1px solid red;
+    height: auto;
+}
+
+#main>div:nth-child(2) {
+    width: 70%;
+    border: 1px solid red;
+    height: auto;
+}
+
+#face {
+    margin-top: 10px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+#face:hover {
+    color: #ff80cb;
+}
+#SectionName,
+#SectionName2,
+#SectionName3,
+#SectionName4,
+#SectionName5,
+#SectionName6,
+#SectionName7 {
+        display: none;
+    }
+#SectionName p,
+#SectionName2 p,
+#SectionName3 p,
+#SectionName4 p,
+#SectionName5 p,
+#SectionName6 p,
+#SectionName7 p {
+    color: black;
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 0px;
+}
