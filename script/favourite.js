@@ -5,7 +5,7 @@ let bag_array=JSON.parse(localStorage.getItem("cart")) || [];
 
     const append=()=>{
 
-        data_array.forEach(function(el){
+        data_array.forEach(function(el,index){
 
             var container=document.getElementById("container_fav")
             
@@ -40,7 +40,10 @@ let bag_array=JSON.parse(localStorage.getItem("cart")) || [];
             var btn=document.createElement("button");
              btn.innerText="Remove";
              btn.addEventListener("click", function(){
-            getRemoved(el,index)
+                data_array.splice(index,1);
+        
+                localStorage.setItem("favorite",JSON.stringify(data_array));
+                window.location.reload();
               });
             
 
@@ -48,13 +51,6 @@ let bag_array=JSON.parse(localStorage.getItem("cart")) || [];
             info_div.append(brand,heading,price,mv_bag,btn)
             holder.append(img_div,info_div)
             container.append(holder)
-
-            function getRemoved(elem,index){
-                data_array.splice(index,1);
-        
-                localStorage.setItem("favorite",JSON.stringify(data_array));
-                window.location.reload();
-            }
 
 
         })
