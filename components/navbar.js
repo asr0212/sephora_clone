@@ -351,6 +351,8 @@ let navbar = () => {
 				</div>
 			</div>
 			<!-- stickynav End -->
+
+
 			<div class="nav-section" id="nav-section">
 				<div class="head-top-parent">
 					<div class="head head-top" id="head-top">
@@ -382,7 +384,7 @@ let navbar = () => {
 
 						<div class="head-top-right" id="head-top-right">
 							<span class="material-icons">get_app</span>
-							<a id="getapp" href="">Get App</a>
+							<a id="getapp" href="getapp.html">Get App</a>
 							<hr />
 							<span class="material-icons">view_in_ar</span>
 							<a id="getapp" href="">Track Order</a>
@@ -425,9 +427,9 @@ let navbar = () => {
 							class="rightDiv-head-bottom-upper"
 							id="rightDiv-head-bottom-upper"
 						>
-							<span class="material-icons"> favorite_border </span>
+							<span onclick="toFav()" class="material-icons"> favorite_border </span>
 							<hr />
-							<span class="material-icons"> shopping_bag </span>
+							<span  id="RedirectTobag" class="material-icons"> shopping_bag </span>
 							<hr />
 							<div class="account box" id="account">
 								<a class="button" id="logname" href="#popup1">Login</a>

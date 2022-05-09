@@ -12,6 +12,7 @@
 			href="https://static.nnnow.com/client/assets/images/favicon.ico"
 		/>
 		<link rel="stylesheet" href="./style/makeup.css" />
+		<link rel="stylesheet" href="./style/footer.css">
 		<link
 			rel="stylesheet"
 			href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -239,6 +240,7 @@
 				</div>
 			</div>
 		</div>
+		<div id="footer"></div>
 	</body>
 </html>
 <script src="./script/makeup.js"></script>
@@ -246,7 +248,11 @@
 	import { navbar } from "./components/navbar.js";
 
 	document.getElementById("component").innerHTML = navbar();
+
+  import {footer} from "./components/footer.js";
+  document.getElementById("footer").innerHTML = footer();
 </script>
 <script src="./script/navscript.js" type="module"></script>
+<script src="./script/fetch.js"></script>
 <script src="./script/sidebar.js"></script>
 <script src="./script/input.js"></script>
