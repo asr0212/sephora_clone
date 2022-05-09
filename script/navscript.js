@@ -107,3 +107,8 @@ function toBag(){
 	window.location.href="favourite.html"
   }
 
+
+  document.getElementById("head-bottom-title-upper").addEventListener("click", toHome)
+function toHome(){
+	window.location.href="index.html"
+}

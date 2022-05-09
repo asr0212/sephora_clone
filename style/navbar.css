@@ -29,6 +29,9 @@
 	/* border: 1px solid black; */
 	/* background-color: yellowgreen; */
 }
+#head-bottom-title-upper{
+	cursor: pointer;
+}
 
 .nav-section .head-bottom .head-bottom-upper {
 	height: 60%;
