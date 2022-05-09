@@ -258,7 +258,7 @@ form p {
 	width: 85%;
 }
 
-#address-button {
+#address-button2 {
 	width: 100%;
 	height: 49px;
 	margin: auto;
@@ -268,8 +268,9 @@ form p {
 	font-weight: 800;
 	letter-spacing: 1px;
 	border: none;
+	cursor: pointer;
 }
-#address-button:hover {
+#address-button2:hover {
 	background-color: rgb(243, 8, 117);
 }
 

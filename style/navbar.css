@@ -186,6 +186,9 @@
 	font-weight: 600;
 	padding: 0;
 }
+.main-menu>li>a:hover{
+	text-decoration: none;
+}
 
 .main-menu a {
 	color: #444;

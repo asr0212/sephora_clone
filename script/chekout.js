@@ -99,3 +99,8 @@ document.getElementById("subtotal-number").innerHTML=subtotal
 let discount= JSON.parse(localStorage.getItem("discount"))
 document.getElementById("discount-number").innerHTML=discount
 
+document.getElementById("address-button2").addEventListener("click",deliveryPage)
+
+function deliveryPage(){
+	window.location.href="confetti.html"
+}

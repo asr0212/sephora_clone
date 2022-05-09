@@ -103,12 +103,20 @@ function toBag(){
 	window.location.href="bag.html"
   }
 
+
+  document.getElementById("redirectToFav").addEventListener("click", toFav)
+
   function toFav(){
 	window.location.href="favourite.html"
   }
 
 
   document.getElementById("head-bottom-title-upper").addEventListener("click", toHome)
-function toHome(){
+
+	function toHome(){
 	window.location.href="index.html"
 }
+
+
+
+
