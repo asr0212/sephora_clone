@@ -7,10 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <link rel="stylesheet" href="./style/skinCare.css">
     <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/navbar.css" />
+    <link rel="stylesheet" href="./style/sidebar.css" />
+    <link rel="stylesheet" href="./style/stickynav.css" />
 </head>
 
 <body>
-    <div>
+    <div id="component">
         <!-- navbar -->
     </div>
     <div id="topImg" onclick="searchPro(sephora)">
@@ -228,3 +236,11 @@
 
 </html>
 <script src="./script/skinCare.js"></script>
+<script type="module">
+	import { navbar } from "./components/navbar.js";
+
+	document.getElementById("component").innerHTML = navbar();
+</script>
+<script src="./script/navscript.js" type="module"></script>
+<script src="./script/sidebar.js"></script>
+<script src="./script/input.js"></script>

@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>api</title>
-		<link rel="stylesheet" href="./style/product.css">
-		<link rel="stylesheet" href="footer.css">
-    </head>
-    <body>
+	<head>
+		<title>api</title>
+		<link rel="stylesheet" href="./style/product.css" />
+		<link rel="stylesheet" href="footer.css" />
+	</head>
+	<body>
 		<div id="sort_div">
 			<label for="sort">SORT: </label>
-		    <select id="sort" onchange="changeDiv()">
-			<option value="P_RATING%3A1">Popularity</option>
-			<option value="P_NEW%3A1">Newest</option>
-			<option value="price%3A0">Price low to high</option>
-			<option value="price%3A1">Price high to low</option>
-		</select>
+			<select id="sort" onchange="changeDiv()">
+				<option value="P_RATING%3A1">Popularity</option>
+				<option value="P_NEW%3A1">Newest</option>
+				<option value="price%3A0">Price low to high</option>
+				<option value="price%3A1">Price high to low</option>
+			</select>
 		</div>
 		<div id="product">
 			<div id="container"></div>
@@ -21,12 +21,17 @@
 		<div id="footer"></div>
 	</body>
 </html>
-<script src="components/fetch.js"></script>
+<script src="./script/fetch.js"></script>
 <script src="./script/product.js"></script>
 <script type="module">
 	import { footer } from "./components/footer.js";
 	document.getElementById("footer").innerHTML = footer();
-	</script>
+</script>
+<script type="module">
+	import { navbar } from "./components/navbar.js";
 
-
-
+	document.getElementById("component").innerHTML = navbar();
+</script>
+<script src="./script/navscript.js" type="module"></script>
+<script src="./script/sidebar.js"></script>
+<script src="./script/input.js"></script>
