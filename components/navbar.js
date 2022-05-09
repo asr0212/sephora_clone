@@ -5,14 +5,14 @@ let navbar = () => {
 			<!-- stickynav Start -->
 			<div id="outernav">
 				<div id="innernav">
-					<div id="Stickynav_leftDiv"><a id="stickynavsephora" href="#">SEPHORA</a></div>
+					<div id="Stickynav_leftDiv"><a id="stickynavsephora" href="index.html">SEPHORA</a></div>
 					<div>
 						<ul class="main-menu">
 							<li id="sale1">
-								<a href="./Women Landing page/newwomen.html">SALE</a>
+								<a href="sale.html">SALE</a>
 							</li>
 							<li>
-								<a href="./Women Landing page/newwomen.html">MAKEUP</a>
+								<a href="makeup.html">MAKEUP</a>
 		
 								<div class="menu-sub">
 									<ul class="sub-category">
@@ -99,7 +99,7 @@ let navbar = () => {
 								
 							</li>
 							<li>
-								<a   onclick = "searchPro(innerText)" href="./Women Landing page/newwomen.html">SKINCARE</a>
+								<a   onclick = "searchPro(innerText)" href="skinCare.html">SKINCARE</a>
 								<div class="menu-sub">
 									<ul class="sub-category">
 										<li>
@@ -170,7 +170,7 @@ let navbar = () => {
 								</div>
 							</li>
 							<li>
-								<a  onclick = "searchPro(innerText)" href="./Women Landing page/newwomen.html">FRAGRANCE</a>
+								<a  onclick = "searchPro(innerText)" href="fragnance.html">FRAGRANCE</a>
 								<div class="menu-sub">
 									<ul class="sub-category">
 										<li>
@@ -193,7 +193,7 @@ let navbar = () => {
 							</li>
 		
 							<li>
-								<a   onclick = "searchPro(innerText)" >HAIRCARE</a>
+								<a   onclick = "searchPro(innerText)" href="haircare.html" >HAIRCARE</a>
 								<div class="menu-sub">
 									<ul class="sub-category">
 										<li>
@@ -219,7 +219,7 @@ let navbar = () => {
 		
 		
 							<li>
-								<a  onclick = "searchPro(innerText)"  href="./Women Landing page/newwomen.html"
+								<a  onclick = "searchPro(innerText)"  href="tools.html"
 									>TOOLS & BRUSHES</a>
 								<div class="menu-sub">
 									<ul class="sub-category">
@@ -255,7 +255,7 @@ let navbar = () => {
 							</li>
 		
 							<li>
-								<a   onclick = "searchPro(innerText)" href="./Women Landing page/newwomen.html"
+								<a   onclick = "searchPro(innerText)" href="brand.html"
 									>BRANDS</a
 								>
 								<div class="menu-sub">
@@ -444,10 +444,10 @@ let navbar = () => {
 							<div class="navcontainer">
 								<ul class="main-menu">
 									<li id="sale">
-										<a href="./Women Landing page/newwomen.html">SALE</a>
+										<a href="sale.html">SALE</a>
 									</li>
 									<li>
-										<a href="./Women Landing page/newwomen.html">MAKEUP</a>
+										<a href="makeup.html">MAKEUP</a>
 
 										<div class="menu-sub">
 											<ul class="sub-category">
@@ -534,7 +534,7 @@ let navbar = () => {
                                         
 									</li>
 									<li>
-										<a   onclick = "searchPro(innerText)" href="./Women Landing page/newwomen.html">SKINCARE</a>
+										<a   onclick = "searchPro(innerText)" href="skinCare.html">SKINCARE</a>
 										<div class="menu-sub">
 											<ul class="sub-category">
 												<li>
@@ -605,7 +605,7 @@ let navbar = () => {
 										</div>
 									</li>
 									<li>
-										<a  onclick = "searchPro(innerText)" href="./Women Landing page/newwomen.html">FRAGRANCE</a>
+										<a  onclick = "searchPro(innerText)" href="fragnance.html">FRAGRANCE</a>
 										<div class="menu-sub">
 											<ul class="sub-category">
 												<li>
@@ -654,7 +654,7 @@ let navbar = () => {
 
 
 									<li>
-										<a  onclick = "searchPro(innerText)"  href="./Women Landing page/newwomen.html"
+										<a  onclick = "searchPro(innerText)"  href="tools.html"
 											>TOOLS & BRUSHES</a>
 										<div class="menu-sub">
 											<ul class="sub-category">
@@ -690,7 +690,7 @@ let navbar = () => {
 									</li>
 
 									<li>
-										<a   onclick = "searchPro(innerText)" href="./Women Landing page/newwomen.html"
+										<a   onclick = "searchPro(innerText)" href="brand.html"
 											>BRANDS</a
 										>
 										<div class="menu-sub">
@@ -863,7 +863,7 @@ let navbar = () => {
                         </label>
 						<div id="sidebarMenu">
                             <ul class="menu">   
-                                <li id="sidebar_sale"><a href="#">SALE</a></li>
+                                <li id="sidebar_sale"><a href="sale.html">SALE</a></li>
                                 <hr>
                                 <!-- <li id="ab" onmouseover="showme()" onmouseout="hideme()"><a href="#">MAKEUP</a> -->
                                 <li id="ab" onclick="showme()"><a href="#">MAKEUP <span class="material-icons">expand_more</span></a>
