@@ -369,7 +369,7 @@ let navbar = () => {
 							<hr />
 							<!-- <div><h3><span class="material-icons">place</span> Store Locator</h3></div> -->
 							<span id="storelocatid" class="material-icons">place</span>
-							<a id="getapp" href="">Store Locator</a>
+							<a id="getapp" href="map.html">Store Locator</a>
 						</div>
 
 						<div class="head-top-center" id="head-top-center">
