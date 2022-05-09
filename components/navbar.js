@@ -429,7 +429,7 @@ let navbar = () => {
 						>
 							<span onclick="toFav()" class="material-icons"> favorite_border </span>
 							<hr />
-							<span onclick="toBag()" class="material-icons"> shopping_bag </span>
+							<span  id="RedirectTobag" class="material-icons"> shopping_bag </span>
 							<hr />
 							<div class="account box" id="account">
 								<a class="button" id="logname" href="#popup1">Login</a>

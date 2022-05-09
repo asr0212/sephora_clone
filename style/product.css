@@ -30,8 +30,12 @@ label{
     display: grid;
     width: 100%;
     grid-template-columns: repeat(4,1fr);
-    gap: 8px;
+    gap: 10px;
     box-sizing: border-box;
+}
+#container p{
+    max-width: 60%;
+    margin: auto;
 }
 
 @media screen and (min-width:1310px){
@@ -59,5 +63,5 @@ label{
     text-align: center;
 }
 #container img{
-    width: 100%;
+    max-width: 60%;
 }
