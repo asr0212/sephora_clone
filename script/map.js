@@ -1,7 +1,3 @@
-import { navbar } from "./navbar.js";
-let n = document.getElementById("component");
-n.innerHTML = navbar();
-
 let map = document.getElementById("submitmap");
 map.addEventListener("click", getData);
 let city = document.querySelector("#city").value;
