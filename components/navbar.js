@@ -367,7 +367,7 @@ let navbar = () => {
 							<hr />
 							<!-- <div><h3><span class="material-icons">place</span> Store Locator</h3></div> -->
 							<span id="storelocatid" class="material-icons">place</span>
-							<a id="getapp" href="getapp.html">Store Locator</a>
+							<a id="getapp" href="">Store Locator</a>
 						</div>
 
 						<div class="head-top-center" id="head-top-center">
@@ -382,7 +382,7 @@ let navbar = () => {
 
 						<div class="head-top-right" id="head-top-right">
 							<span class="material-icons">get_app</span>
-							<a id="getapp" href="">Get App</a>
+							<a id="getapp" href="getapp.html">Get App</a>
 							<hr />
 							<span class="material-icons">view_in_ar</span>
 							<a id="getapp" href="">Track Order</a>
