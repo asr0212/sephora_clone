@@ -124,17 +124,17 @@ fetch(`https://sephora.p.rapidapi.com/products/search?q=${q}&pageSize=12&current
         }
         
         let array = [];
-             for (let m = 0; m < 3; m++) {
+             for (let m = 0; m < 4; m++) {
             	array.push(dataArr2[m]);
               }
 
               appendSimilar2(array);
               let leftBtn = 0;
-              let rigthBtn = 4;
+              let rigthBtn = 3;
               document.querySelector("#left2").addEventListener("click",()=>{
                 if (leftBtn < 0 && rigthBtn < 4) {
                     leftBtn = 0;
-                    rigthBtn = 4;
+                    rigthBtn = 3;
                 }
                 leftBtn--;
                 rigthBtn--;
@@ -149,7 +149,7 @@ fetch(`https://sephora.p.rapidapi.com/products/search?q=${q}&pageSize=12&current
               document.querySelector("#right2").addEventListener("click",()=>{
                 if (leftBtn < 0 && rigthBtn < 4) {
                     leftBtn = 0;
-                    rigthBtn = 4;
+                    rigthBtn = 3;
                 }
                 array = [];
                 if (rigthBtn < dataArr2.length - 1) {
