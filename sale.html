@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sale</title>
+    <link rel="stylesheet" href="./style/footer.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/navbar.css" />
+    <link rel="stylesheet" href="./style/sidebar.css" />
+    <link rel="stylesheet" href="./style/stickynav.css" />
     <style>
         #grid1{
             display: grid;
@@ -100,7 +109,7 @@
     color: #6c798d;
     font-size: small;
 }
-p{
+#text_Div>p{
     text-align: center;
     padding-top: 10px;
     color: #6c798d;
@@ -109,6 +118,7 @@ p{
     </style>
 </head>
 <body>
+    <div id="component"></div>
     <div id="slide1">
         <!-- <img src="https://logan.nnnow.com/content/dam/nnnow-project/11-april-2022/SC_Offerpage_DoublesidedcleansingbrushDesktop.jpg" alt="top slide1"> -->
     </div>
@@ -174,6 +184,14 @@ p{
       <div id="footer"></div>
 </body>
 </html>
+<script type="module">
+	import { navbar } from "./components/navbar.js";
+
+	document.getElementById("component").innerHTML = navbar();
+
+  import {footer} from "./components/footer.js";
+  document.getElementById("footer").innerHTML = footer();
+</script>
 <script>
     let arrData= ["https://logan.nnnow.com/content/dam/nnnow-project/11-april-2022/SC_Offerpage_DoublesidedcleansingbrushDesktop.jpg","https://logan.nnnow.com/content/dam/nnnow-project/15-feb-2022/SC_Topbanner_Upto40offDesktop.jpg"]
     let image1 =document.createElement("img");
@@ -205,3 +223,4 @@ p{
         }
 
 </script>
+<script src="./script/fetch.js"></script>

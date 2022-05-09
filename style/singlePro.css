@@ -89,7 +89,7 @@
     margin-top: 1px;
 }
 
-.material-icons{
+#btn_hold .material-icons{
     background-color: #E72E98; 
     cursor: pointer;
     height: 35px;

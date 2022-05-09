@@ -4,7 +4,7 @@ const searchPro = (query) => {
         method: 'GET',
         headers: {
             'X-RapidAPI-Host': 'sephora.p.rapidapi.com',
-            'X-RapidAPI-Key': '67fb80cd92mshf199fdb297164f9p1d19bdjsn867cebfb5776'
+            'X-RapidAPI-Key': ' a29c414b79msh477758a13a6093bp184cd9jsn49517514dbf7'
         }
     };
     
@@ -12,7 +12,7 @@ const searchPro = (query) => {
         .then(response => response.json())
         .then(response => {
             localStorage.setItem("sephoraPro",JSON.stringify(response));
-            window.location.href = "../product.html";
+            window.location.href = "./product.html";
         })
         .catch(err => console.error(err));
 
