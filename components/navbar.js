@@ -400,13 +400,12 @@ let navbar = () => {
 						<div  class="input-head-bottom-upper" id="input-head-bottom-upper">
 							<form
 								class="example"
-								action="/action_page.php"
 								style="margin: auto; max-width: 300px"
 							>
-								<button type="submit">
+								<button >
 									<span class="material-icons"> search </span>
 								</button>
-								<input type="text" placeholder="Search.." name="search2" id="searchDiv" onClick="document.getElementById('searchresults').style.display='block'" />
+								<input type="text" placeholder="Search.." name="search2" id="searchDiv"  onClick="document.getElementById('searchresults').style.display='block'" />
 							</form>
 							<hr id="input-hr" />
                             <div class="searchresults" id="searchresults">
@@ -427,7 +426,7 @@ let navbar = () => {
 							class="rightDiv-head-bottom-upper"
 							id="rightDiv-head-bottom-upper"
 						>
-							<span onclick="toFav()" class="material-icons"> favorite_border </span>
+							<span id="redirectToFav" class="material-icons"> favorite_border </span>
 							<hr />
 							<span  id="RedirectTobag" class="material-icons"> shopping_bag </span>
 							<hr />
@@ -628,7 +627,7 @@ let navbar = () => {
 									</li>
 
 									<li>
-										<a   onclick = "searchPro(innerText)" >HAIRCARE</a>
+										<a   onclick = "searchPro(innerText)" href="haircare.html" >HAIRCARE</a>
 										<div class="menu-sub">
 											<ul class="sub-category">
 												<li>
