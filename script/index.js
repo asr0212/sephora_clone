@@ -10,7 +10,7 @@ const similarPro4 = (q) =>{
 	method: 'GET',
 	headers: {
 		'X-RapidAPI-Host': 'sephora.p.rapidapi.com',
-		'X-RapidAPI-Key': ' a29c414b79msh477758a13a6093bp184cd9jsn49517514dbf7'
+		'X-RapidAPI-Key': ' dc600e7ca0mshcce829df0697e0fp1c7b1ejsna2c915aa1f3f'
 
 	}
 };
@@ -108,7 +108,7 @@ const similarPro2 = (q) =>{
 	method: 'GET',
 	headers: {
 		'X-RapidAPI-Host': 'sephora.p.rapidapi.com',
-		'X-RapidAPI-Key': ' a29c414b79msh477758a13a6093bp184cd9jsn49517514dbf7'
+		'X-RapidAPI-Key': ' dc600e7ca0mshcce829df0697e0fp1c7b1ejsna2c915aa1f3f'
 
 	}
 };
