@@ -30,32 +30,6 @@ let promo = document.getElementById("promoinp");
 promo.addEventListener("keydown", promofn);
 
 
-var data=[
-	{
-		img:"https://cdn13.nnnow.com/web-images/thumbnail/styles/CYQ6YM3FRPY/1604477899654/1.jpg",
-		brand:"Saphorea",
-		pname:"FOOT MASK - COCONUT",
-		price:"500"
-	},
-	{
-		img:"https://cdn09.nnnow.com/web-images/thumbnail/styles/3T4E8DLOLWR/1533201154994/1.jpg",
-		brand:"dior",
-		pname:"GLOW PERFECTION FOUNDATION - 33 WALNUT",
-		price:"400"
-	},
-	{
-		img:"https://cdn10.nnnow.com/web-images/thumbnail/styles/J6QHNF8V3R4/1626067212265/1.jpg",
-		brand:"axe",
-		pname:"SMOOTHING CLEANSER",
-		price:"200"
-	},
-	{
-		img:"https://cdn09.nnnow.com/web-images/thumbnail/styles/9NY0C83T5FJ/1593084196288/1.jpg",
-		brand:"nirma",
-		pname:"TAKE THE DAY OFF CLEANSING BALM",
-		price:"300"
-	}
-]
 
 var sum = sum || 0;
 var num = 0 || num;
@@ -87,86 +61,11 @@ document.getElementById("total-number").innerText="$ "+document.getElementById("
 
 
 
+document.getElementById("address-button").addEventListener("click",bagToCheckout)
 
-// function Display(img,brand,price){
-// 		var row = document.createElement("tr");
-// 		var td1 = document.createElement("td");
-// 		let image = document.createElement("img");
-// 		image.src=img
-// 		image.setAttribute("id","productImg")
-		
-		
-// 		td1.append(image)
-// 		var td2 = document.createElement("td");
-//     	td2.textContent = brand
-// 		var td3 = document.createElement("td");
-// 		var price=price.slice(1)*72	
-// 		var increase = document.createElement("button");
-// 		increase.textContent = "+";
-// 		increase.addEventListener("click", function (){
-// 			var val = Number(qty.innerText);
-// 			if(val<5){
-// 				qty.innerText = Number(qty.innerText) + 1;
-// 			countofproducts.innerText++
-// 			console.log(countofproducts.innerText)
-
-// 			document.getElementsByClassName("mybag").innerText=qty
-// 			total.innerText = Number(qty.innerText) * price;
-// 			sum = eval(sum + Number(price));
-// 			document.getElementById("subtotal-number").innerHTML=sum
-// 			document.getElementById("total-number").innerText=document.getElementById("subtotal-number").innerText
-// 			}
-			
-// 		});
-
-// 		var decrease = document.createElement("button");
-// 		// decrease.setAttribute("id", "dec");
-// 		decrease.textContent = "-";
-// 		decrease.addEventListener("click", function () {
-// 			var val = Number(qty.innerText);
-// 			if (val > 1) {
-// 			  qty.innerText = Number(qty.innerText) - 1;
-// 			  countofproducts.innerText--
-// 			  document.getElementsByClassName("mybag").innerText=qty
-// 			  total.innerText = Number(total.innerText) - price;
-// 			  sum = eval(sum - Number(price));
-// 			  document.getElementById("subtotal-number").innerHTML=sum
-// 			  document.getElementById("total-number").innerText=document.getElementById("subtotal-number").innerText
-// 			//   tag.innerText = sum;
-// 			//   checkOutTotal = JSON.parse(localStorage.getItem("total")) || 0;
-// 			//   checkOutTotal = sum;
-// 			//   localStorage.setItem("total", JSON.stringify(checkOutTotal));
-// 			}
-// 		  });
-		  
-		  
-// 		  var qty = document.createElement("p");
-// 		  qty.innerText="1"
-// 		  qty.setAttribute("class","currentQty")
-// 		  qty.id = "qty" + (num + 1);
-// 		  td3.append(increase,qty,decrease)
-// 		  td3.style.display = "flex";
-// 		  td3.setAttribute("id","qtychange")
-
-// 		  var td4 = document.createElement("td");
-// 		  var total = document.createElement("p");
-// 		  total.innerText=price
-//     		total.id = "total" + (num + 1);
-// 			td4.append(total)
-
-// 			var td5 = document.createElement("td")
-// 			var removBtn = document.createElement("button")
-// 			removBtn.innerText="Remove"
-// 			removBtn.addEventListener("click",function(){
-// 				removeFn()
-// 			})
-// 			td5.append(removBtn)
-
-// 		  row.append(td1, td2, td3,td4,td5);
-
-// 		  var tbody = document.querySelector("tbody");
-//     	  tbody.append(row);
-// 		  sum = eval(sum + Number(price));
+function bagToCheckout(){
+	window.location.href="checkout.html"
+}
 
 	
 	

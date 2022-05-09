@@ -97,7 +97,7 @@ document.getElementById("submit1").addEventListener("click", login);
 // let searchPro = (query) => {
 // 	console.log(query);
 // };
-
+document.getElementById("RedirectTobag").addEventListener("click", toBag)
 
 function toBag(){
 	window.location.href="bag.html"
@@ -106,3 +106,4 @@ function toBag(){
   function toFav(){
 	window.location.href="favourite.html"
   }
+
