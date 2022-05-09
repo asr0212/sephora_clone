@@ -93,3 +93,7 @@ document.getElementById("stickynavlogin").innerText = name2 || "Login";
 document.getElementById("sidelogname").innerText = name2 || "Login";
 
 document.getElementById("submit1").addEventListener("click", login);
+
+// let searchPro = (query) => {
+// 	console.log(query);
+// };

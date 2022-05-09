@@ -1,5 +1,5 @@
 let navbar = () => {
-    return `
+	return `
     <header>
 
 			<!-- stickynav Start -->
@@ -406,7 +406,7 @@ let navbar = () => {
 								</button>
 								<input type="text" placeholder="Search.." name="search2" id="searchDiv" onClick="document.getElementById('searchresults').style.display='block'" />
 							</form>
-							<hr />
+							<hr id="input-hr" />
                             <div class="searchresults" id="searchresults">
                                 <b>Popular Searches</b>
                                 <p onclick = "searchPro(innerText)">Cream lip stain</p>
@@ -914,9 +914,8 @@ let navbar = () => {
                                 
                             </ul>
                         </div>
-    `
+    `;
 };
-
 
 // let loginFn=()=>{
 //     let register = async (e) => {
@@ -1000,21 +999,17 @@ let navbar = () => {
 // 		// window.location.reload()
 
 // 		let name2 = localStorage.getItem("accountName")
-	
-	
+
 //     document.getElementById("logname").innerHTML = name2 || "Login"
 //     document.getElementById("stickynavlogin").innerHTML = name2 || "Login"
-	
-		
-		
+
 // 	};
 //     let name2 = localStorage.getItem("accountName")
-	
-	
+
 //     document.getElementById("logname").innerHTML = name2 || "Login"
 // 	document.getElementById("stickynavlogin").innerHTML = name2 || "Login"
 
 // 	document.getElementById("submit1").addEventListener("click", login);
 // };
 
-export {navbar}
+export { navbar };
