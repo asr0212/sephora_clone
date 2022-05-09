@@ -97,3 +97,12 @@ document.getElementById("submit1").addEventListener("click", login);
 // let searchPro = (query) => {
 // 	console.log(query);
 // };
+
+
+function toBag(){
+	window.location.href="bag.html"
+  }
+
+  function toFav(){
+	window.location.href="favourite.html"
+  }
