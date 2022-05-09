@@ -28,7 +28,7 @@ const similarPro1 = (q,s) =>{
 	method: 'GET',
 	headers: {
 		'X-RapidAPI-Host': 'sephora.p.rapidapi.com',
-		'X-RapidAPI-Key': ' dc600e7ca0mshcce829df0697e0fp1c7b1ejsna2c915aa1f3f'
+		'X-RapidAPI-Key': ' f61a0d4d26msh294da13f36ec372p1cf486jsn8bdd561d2abf'
 
 	}
 };
@@ -122,7 +122,7 @@ const similarPro2 = (q,s) =>{
 	method: 'GET',
 	headers: {
 		'X-RapidAPI-Host': 'sephora.p.rapidapi.com',
-		'X-RapidAPI-Key': ' dc600e7ca0mshcce829df0697e0fp1c7b1ejsna2c915aa1f3f'
+		'X-RapidAPI-Key': ' f61a0d4d26msh294da13f36ec372p1cf486jsn8bdd561d2abf'
 
 	}
 };
@@ -218,7 +218,7 @@ const similarPro3 = (q) =>{
 	method: 'GET',
 	headers: {
 		'X-RapidAPI-Host': 'sephora.p.rapidapi.com',
-		'X-RapidAPI-Key': ' dc600e7ca0mshcce829df0697e0fp1c7b1ejsna2c915aa1f3f'
+		'X-RapidAPI-Key': ' f61a0d4d26msh294da13f36ec372p1cf486jsn8bdd561d2abf'
 
 	}
 };
@@ -314,7 +314,7 @@ const similarPro4 = (q) =>{
 	method: 'GET',
 	headers: {
 		'X-RapidAPI-Host': 'sephora.p.rapidapi.com',
-		'X-RapidAPI-Key': ' dc600e7ca0mshcce829df0697e0fp1c7b1ejsna2c915aa1f3f'
+		'X-RapidAPI-Key': ' f61a0d4d26msh294da13f36ec372p1cf486jsn8bdd561d2abf'
 
 	}
 };

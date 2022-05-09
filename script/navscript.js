@@ -27,7 +27,7 @@ let register = async (e) => {
 
 	let data = await res.json();
 	console.log(data);
-	window.location.href = "test.html";
+	window.location.href = "./index.html";
 };
 
 document.getElementById("submit2").addEventListener("click", register);
@@ -76,7 +76,6 @@ let getUserDetail = async (username, token) => {
 	console.log(logName.innerHTML);
 	let name = data.name;
 	localStorage.setItem("accountName", name);
-	// window.location.reload()
 
 	let name2 = localStorage.getItem("accountName");
 
