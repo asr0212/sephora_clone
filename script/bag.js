@@ -95,7 +95,7 @@ function display(){
     	// td2.textContent = el.brand
 		var product_brand=document.createElement("p")
 		product_brand.innerText=el.brand
-		var product_Name=document.createElement("p")
+		var product_Name=document.createElement("h3")
 		product_Name.innerText=el.productName
 		td2.append(product_brand,product_Name)
 		var td3 = document.createElement("td");

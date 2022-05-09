@@ -91,7 +91,7 @@
 #main > .main-child {
 	width: 80%;
 	max-height: 750px;
-	border: 1px solid;
+	/* border: 1px solid; */
 	margin: auto;
 	display: flex;
 }
@@ -99,7 +99,7 @@
 .main-child > .main-child-left {
 	width: 85%;
 	/* background-color: #0092df; */
-	border: 1px solid yellow;
+	/* border: 1px solid yellow; */
 	overflow-y: scroll;
 	margin-left: 50px
 }
@@ -207,7 +207,7 @@
 
 .promo-code .promo-code-input-div {
 	height: 40%;
-	color: yellow;
+	/* color: yellow; */
 	margin: auto;
 	align-items: center;
 }
@@ -314,7 +314,7 @@
 }
 #trial{
 	width: 400px;
-	border: 1px solid black;
+	/* border: 1px solid black; */
 }
 #qtyDiv{
 	width: 200px;
@@ -328,12 +328,14 @@ tbody {
     display: table-row-group;
     vertical-align: middle;
     border-color: inherit;
+	margin-top: 15px;
 }
 table {
-	width: 68%;
+	width: 80%;
 	display: inline-block;
 	text-align: center;
   }
+  
 
    #productImg{
 	  width: 100px;
@@ -343,12 +345,10 @@ table {
   #headerOfItem{
 	  padding-bottom: 25px;
   }
-  tr{
-	  border: 1px solid black;
-  }
+ 
   #totPrice{
 	  padding-left: 40px;
-	  border: 1px solid black;
+	  /* border: 1px solid black; */
   }
 
   #qtychange button{
@@ -357,10 +357,14 @@ table {
 	cursor: pointer;
 	background-color: rgb(247, 243, 243);
 }
+
   #qtychange span{
 	  color: rgb(255, 54, 148);
 	  /* border: none; */
   }
+  #qtychange button:hover{
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
 
   #RemoveBtn{
 	  margin-left: 50%;
@@ -378,9 +382,21 @@ table {
 	box-shadow: rgba(32, 143, 240, 0.4) 0px 2px 4px, rgba(10, 101, 237, 0.3) 0px 7px 13px -3px, rgba(20, 120, 242, 0.2) 0px -3px 0px inset;
   }
   #description{
-	  letter-spacing: 1.5px;
-	  width: 200px;
-  }
+	letter-spacing: 1.5px;
+	width: 100%;
+		  /* border: 1px solid black; */
+		  text-align: center;
+		  box-sizing: border-box;
+}
+#description p{
+	font-weight: 200;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+#description h3{
+	
+	font-size: 16px;
+}
   
   
   #qtychange{
