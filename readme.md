@@ -1,1 +1,1 @@
-sephora clone
+Sephora website clone
